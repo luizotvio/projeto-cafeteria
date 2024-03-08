@@ -27,17 +27,15 @@ body {
 
 header {
     width: 100%;
-    height: 100px;
     position: fixed;
     background-color: var(--primary-color);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .logo img {
     width: 100px;
-    position: absolute;
+    position: relative;
     left: 15%;
-    bottom: 0;
 }
 
 nav ul {
@@ -68,12 +66,15 @@ nav ul li a {
     position: relative;
 }
 
-.banner p {
+.banner h1 {
     color: var(--white-color);
     font-family: 'Fraunces', sans-serif;
     font-size: 100px;
+    font-weight: 400;
+    text-align: center;
     top: 45%;
-    left: 15%;
+    right: 0;
+    left: 0;
     position: absolute;
 }
 
@@ -130,12 +131,15 @@ main {
     font-family: 'Fraunces', sans-serif;
     font-style: italic;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--white-color);
     background-color: var(--primary-color);
-    position: absolute;
+    position: relative;
     top: 45%;
-    left: 36%;
+    left: 0%;
+    right: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .contatos {
@@ -154,9 +158,12 @@ main {
     background-color: var(--primary-color);
     color: var(--white-color);
     padding: 10px;
-    position: absolute;
+    position: relative;
     top: 10%;
-    left: 37%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
     font-size: 24x;
 }
 
@@ -164,13 +171,16 @@ main {
     color: var(--white-color);
     margin: 10px;
     font-size: 16px;
+    text-align: center;
     text-shadow: 2px 3px #000000;
 }
 
 .contatos iframe {
     position: absolute;
     top: 23%;
-    right: 21%;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .box-contatos {
@@ -183,15 +193,84 @@ main {
     left: 37%;
 }
 
+.horarios {
+    height: 85vh;
+    background-image: url('../img/cafeteria.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Oswald';
+}
+
+.horarios h2 {
+    font-size: 18px;
+    margin: 0 auto; 
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: var(--white-color);
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.lista-hr {
+    max-width: 768px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+}
+
+.lista-hr li {
+    position: relative;
+}
+
+
+.lista-hr li h3 {
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.lista-hr P {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--quinary-color);
+    font-weight: 700;
+}
+
+.lista-hr span {
+    width: 70%;
+    border-bottom: 1px solid var(--quinary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#text-fav {
+    color: var(--secondary-color);
+}
+
 footer {
     width: 100%;
     font-family: 'Lato';
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: var(--senary-color);
     color: var(--white-color);
     position: relative;
+}
+
+footer p {
+    margin: 10px 0;
 }
 
 .autor {
@@ -208,3 +287,4 @@ footer {
 
 .seta img {
     width: 40px;
+}
